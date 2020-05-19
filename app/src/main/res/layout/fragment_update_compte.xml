@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".updateCompte">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/jaune"
+   >
+
+
+    <EditText
+        android:id="@+id/uFullName"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+
+        android:hint="Nom et Prenom"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Nom et Prenom"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="20sp"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/uEmail"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/uFullName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/ic_contact_mail_black_24dp"
+        android:ems="10"
+        android:hint="Adresse mail"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/uPassword"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="20sp"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/uEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:hint="Mot de passe"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:ems="10"
+        android:textAlignment="center"
+
+        android:inputType="textPersonName" />
+
+    <android.widget.Button
+        android:id="@+id/updateBtn"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/uAdresse"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_rectangle_pink"
+        android:ems="10"
+        android:text="Modifier"
+        android:textColor="#ffffff" />
+
+
+
+    <EditText
+        android:id="@+id/uPhoneNumber"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="20sp"
+        android:hint="Nuumèro de telephone"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/uPassword"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+
+        android:drawableLeft="@drawable/ic_contact_phone_black_24dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/uAdresse"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:hint="Adresse"
+        android:layout_below="@+id/uPhoneNumber"
+        android:layout_marginLeft="70dp"
+        android:drawableLeft="@drawable/ic_home_black_24dp"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="20sp"
+        android:ems="10"
+        />
+
+    <android.widget.Button
+        android:id="@+id/uMap"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:text="Adresse"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_rectangle_pink"
+        android:layout_below="@+id/uPhoneNumber"
+        android:layout_toRightOf="@+id/uAdresse"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:ems="10" />
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/jaune">
+
+        <TextView
+            android:id="@+id/champs"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+
+
+            android:ems="10"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Nom du produit:"
+
+
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/nomD"
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/champs"
+
+
+            android:ems="10"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/image_view_upload"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:layout_height="200dp"
+            android:layout_below="@+id/nomD"
+            android:layout_marginTop="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/champs1"
+            android:layout_width="150dp"
+            android:layout_marginLeft="40dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/image_view_upload"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Adresse:"
+
+
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/adresse"
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/image_view_upload"
+            android:layout_marginTop="15dp"
+
+            android:layout_toRightOf="@id/champs1"
+            android:ems="10"
+            android:hint=""
+
+            android:text="TextView"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="20sp" />
+
+
+        <ImageView
+            android:id="@+id/btnApl"
+            android:layout_width="30dp"
+            android:layout_height="58dp"
+            android:src="@drawable/ic_call_black_24dp"
+            tools:srcCompat="@tools:sample/avatars"
+            android:layout_below="@+id/adresse"
+            android:layout_toRightOf="@+id/reserver"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            />
+
+        <android.widget.Button
+            android:id="@+id/reserver"
+            android:background="@drawable/button_rectangle_pink"
+            android:layout_width="150dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="40dp"
+            android:hint="Adresse"
+            android:layout_below="@+id/adresse"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:text="Reserver" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+

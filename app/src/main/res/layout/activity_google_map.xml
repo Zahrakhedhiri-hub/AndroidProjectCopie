@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00888282">
+
+
+    <fragment
+        android:id="@+id/google_map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="620dp"
+
+
+
+        />
+
+    <android.widget.Button
+        android:id="@+id/buttonMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="625dp"
+        android:text="Valider"
+        android:background="@drawable/button_rectangle_pink"
+        android:layout_centerHorizontal="true"
+        app:layout_anchorGravity="end|bottom"
+        android:textColor="#ffffff"/>
+
+    <!-- android:name="com.example.fragmentexemple.FragmentTwo" -->
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

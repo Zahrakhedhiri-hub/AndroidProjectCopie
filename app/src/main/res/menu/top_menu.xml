@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/listDon"
+
+        android:title="Dons"
+        android:icon="@drawable/ic_menu_black_24dp"
+        />
+
+    <item android:title="Demande"
+        android:id="@+id/listDemande"
+
+        android:icon="@drawable/ic_menu_black_24dp"
+
+
+        />
+    <item android:title="Close Don"
+        android:id="@+id/listCloseDon"
+
+        android:icon="@drawable/ic_favorite_black_24dp"
+
+
+
+        />
+
+    <item android:title="Compte"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:id="@+id/update"></item>
+
+    <item android:title="logout"
+        android:id="@+id/logout"
+
+        android:icon="@drawable/ic_cancel_black_24dp"
+
+
+        />
+</menu>
